@@ -57,11 +57,11 @@ Sub Stock_market_data()
 'Utilisation of a  For_loop that will check every single row in this worksheet
 
     For j = 2 To LR
-'comment
+'using the conditional formating 
     If Cells(j - 1, 1).Value <> Cells(j, 1).Value Then
     open_year = Cells(j, 3).Value
     End If
-'comment
+'assign value to ticker columm base on the condional formating 
     If Cells(j + 1, 1).Value <> Cells(j, 1).Value Then
     ticker_name = Cells(j, 1).Value
     
